@@ -10,19 +10,15 @@
 </head>
 <body class="h-full grid place-items-center">
     <div id="app">
-        <app-button>Submit</app-button>
-        <app-button>Click me</app-button>
+        <app-button type="primary">Primary</app-button>
+        <app-button type="secondary">Secondary</app-button>
+        <app-button type="muted">Muted</app-button>
     </div>
 
     <script type="module">
-        import AppButton from "./js/components/AppButton.js"
-        const app = {
-            components : {
-                'app-button' : AppButton
-                }
-            }
+        import App from "./js/components/App.js"
 
-        Vue.createApp(app).mount('#app')
+        Vue.createApp(App).mount('#app')
     </script>
 </body>
 </html>
